@@ -1,20 +1,73 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+🚀 JurisAI – Intelligent Legal Monitoring System
+📌 Overview
 
-# Run and deploy your AI Studio app
+JurisAI is an AI-powered legal monitoring system that tracks legislative changes, court decisions, and regulatory updates. It analyzes their impact, automates compliance actions, notifies stakeholders, and maintains a complete audit trail.
 
-This contains everything you need to run your app locally.
+🧠 Features
+📡 Real-time Monitoring – Tracks legal updates from multiple sources
+🤖 AI Analysis – Uses NLP to understand legal content
+⚖️ Impact Classification – Categorizes updates (High / Medium / Low)
+🔄 Compliance Suggestions – Recommends necessary actions
+🔔 Notifications – Sends alerts via email
+🗂️ Audit Trail – Stores all updates with timestamps
+📊 Dashboard – View updates and system activity
+🏗️ System Architecture
+Monitoring Agent – Collects legal updates
+Analysis Agent – Processes and analyzes content
+Compliance Agent – Suggests actions
+Notification Agent – Sends alerts
+Audit Agent – Maintains logs
+🛠️ Tech Stack
+Python
+BeautifulSoup (Web Scraping)
+spaCy / Transformers (NLP)
+SQLite (Database)
+Streamlit (Dashboard)
+⚙️ Installation
+# Clone the repository
+git clone https://github.com/your-username/jurisai.git
 
-View your app in AI Studio: https://ai.studio/apps/932b963a-8914-4972-9d31-59996c686721
+# Navigate to project folder
+cd jurisai
 
-## Run Locally
+# Install dependencies
+pip install -r requirements.txt
+▶️ Usage
+python main.py
 
-**Prerequisites:**  Node.js
+👉 The system will:
 
+Fetch legal updates
+Analyze impact
+Send alerts
+Store logs
+📊 Dashboard
+streamlit run app.py
+📁 Project Structure
+jurisai/
+│── agents/
+│   ├── monitoring_agent.py
+│   ├── analysis_agent.py
+│   ├── compliance_agent.py
+│   ├── notification_agent.py
+│   ├── audit_agent.py
+│
+│── database/
+│── app.py
+│── main.py
+│── requirements.txt
+🔐 Configuration
+Add your email credentials in notification_agent.py
+Update legal source URLs in monitoring_agent.py
+🚀 Future Enhancements
+Multi-country legal tracking 🌍
+WhatsApp/SMS notifications 📱
+Advanced AI legal summarization 🤖
+Cloud deployment ☁️
+🤝 Contributing
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Contributions are welcome! Feel free to fork and improve the project.
+
+📜 License
+
+This project is licensed under the MIT License.
